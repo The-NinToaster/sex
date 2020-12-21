@@ -13,15 +13,10 @@ http.createServer(function (req, res) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-});
-
-bot.on('ready', () => {
-
 	console.log('Your Bot is now Online.')
 	let activities = ['peepee poopoo'],i = 0;
 	setInterval(() => bot.user.setActivity(`${activities[i++ %  activities.length]}`,  {type:'STREAMING',url:'https://www.youtube.com/watch?v=IOcQD04-0yw'}), 5000)
   
 });
-  
 
 client.login('config.token');
