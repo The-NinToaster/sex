@@ -258,50 +258,44 @@ client.on('message', message => {
 
 	for(var i = 0; i < triggers.length; i++)
 	{
-		if(message.content.includes(triggers[i]))
-		{
-			let pronoun10 = pronoun1[getRandomInt(0, pronoun1.length)];
-			let sentence = faster[getRandomInt(0, faster.length)] + " " + said[getRandomInt(0, said.length)] + " " + the +
-							" " + fadj[getRandomInt(0, fadj.length)] + " " + female[getRandomInt(0, female.length)] +
-							" " + yeet + " " + madjec[getRandomInt(0, madjec.length)] + " " + male[getRandomInt(0, male.length)] +
-							" " + diddled[getRandomInt(0, diddled.length)] + " " + pronoun10 + " " + titadj[getRandomInt(0, titadj.length)] +
-							" " + knockers[getRandomInt(0, knockers.length)] + " " + and + " " + thrust[getRandomInt(0, thrust.length)] +
-							" " + pronoun2[getRandomInt(0, pronoun2.length)] + " " + dongadj[getRandomInt(0, dongadj.length)] + 
-							" " + dong[getRandomInt(0, dong.length)] + " into " + pronoun10 + " " +
-              twatadj[getRandomInt(0,twatadj.length)] + " " + twat[getRandomInt(0, twat.length)];
+    if(message.author != 790587562926407701)
+    {
+		  if(message.content.includes(triggers[i]))
+		  {
+			  let pronoun10 = pronoun1[getRandomInt(0, pronoun1.length)];
+			  let sentence = faster[getRandomInt(0,     faster.length)] + " " + said[getRandomInt(0,  said.length)] + " " + the + " " + fadj[getRandomInt(0, fadj.length)] + " " + female[getRandomInt(0, female.length)] +							" " + yeet + " " + madjec[getRandomInt(0, madjec.length)] + " " + male[getRandomInt(0, male.length)] + " " + diddled[getRandomInt(0, diddled.length)] + " " + pronoun10 + " " + titadj[getRandomInt(0, titadj.length)] + " " + knockers[getRandomInt(0, knockers.length)] + " " + and + " " + thrust[getRandomInt(0, thrust.length)] + " " + pronoun2[getRandomInt(0, pronoun2.length)] + " " + dongadj[getRandomInt(0, dongadj.length)] + " " + dong[getRandomInt(0, dong.length)] + " into " + pronoun10 + " " + twatadj[getRandomInt(0,twatadj.length)] + " " + twat[getRandomInt(0, twat.length)];
 
-			message.channel.send(message.author + "```" + sentence + "```");
-      break; 
+			  message.channel.send(message.author.toString() +  "```" + sentence + "```");
+        break;
+      } 
  		}
 	}
   
   if(message.content === `${config.prefix}help`)
   {
-    message.channel.send( message.author + "I will spout random p*rn mad-libs anytime the following words are mentioned at any point (censored so I don't trip myself!!): ```s3x, c/m, p0rn, h3ntai, f/ck, p3nis and v4gina```  This bot is also trans and enby-friendly, since the use of *they/them* is included in the pool. I also respond to: ```s3x!help, s3x!donate, s3x!whodidthis, s3x!invite and s3x!contribute```" ); 
+    message.channel.send( message.author.toString() + " I will spout random porn mad-libs anytime the following words are mentioned at any point: ```sex, cum, porn, hentai, fuck, penis and vagina```  This bot is also trans and enby-friendly, since the use of *they/them* is included in the pool. I also respond to: ```sex!help, sex!donate, sex!whodidthis, sex!invite and sex!contribute```" ); 
   }
 
   if(message.content === `${config.prefix}donate`)
   {
-    message.channel.send( message.author + "If you want to actually donate to this cursed cause and bot, you can do so here: ``` paypal.me/thenintoaster ```  "); 
+    message.channel.send( message.author.toString + " If you want to actually donate to this cursed cause and bot, you can do so here: ``` paypal.me/thenintoaster ```  "); 
   }
 
   if(message.content === `${config.prefix}whodidthis`)
   {
-    message.channel.send(message.author + "I was created by a dumb Canadian that calls herself as Nikki, her discord tag is `@The NinToaster #1495` Why? F/ck you, that's why. Nah I'm messing with you, this is a port of an almost 20yr old arch package."); 
+    message.channel.send(message.author.toString + " I was created by a dumb Canadian that calls herself as Nikki, her discord tag is `@The NinToaster #1495` Why? Fuck you, that's why. Nah I'm messing with you, this is a port of an almost 20yr old arch package."); 
   }
 
   if(message.content === `${config.prefix}contribute`)
   {
-    message.channel.send(message.author + "Want to contribute new words? Wanna improve this bot? Here's the GitHub page!: ``` https://github.com/The-NinToaster/sex ``` and open an Issue or a Pull Request! My creator will look periodically."); 
+    message.channel.send(message.author.toString() + " Want to contribute new words? Wanna improve this bot? Here's the GitHub page!: ``` https://github.com/The-NinToaster/sex ``` and open an Issue or a Pull Request! My creator will look periodically."); 
   }
 
 
   if(message.content === `${config.prefix}invite`)
   {
-    message.channel.send(message.author + "To invite me to another server, use this invite! ```https://discord.com/oauth2/authorize?client_id=790587562926407701&scope=bot ```"); 
+    message.channel.send(message.author.tag + " To invite me to another server, use this invite! ```https://discord.com/oauth2/authorize?client_id=790587562926407701&scope=bot ```"); 
   }
-
-
 })
 
 client.login(config.token);
