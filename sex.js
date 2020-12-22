@@ -270,34 +270,35 @@ client.on('message', message => {
 							" " + dong[getRandomInt(0, dong.length)] + " into " + pronoun10 + " " +
               twatadj[getRandomInt(0,twatadj.length)] + " " + twat[getRandomInt(0, twat.length)];
 
-			message.channel.send("```" + sentence + "```");
+			message.channel.send(message.author + "```" + sentence + "```");
+      break; 
  		}
 	}
   
   if(message.content === `${config.prefix}help`)
   {
-    message.channel.send("I will spout random p*rn mad-libs anytime the following words are mentioned at any point (censored so I don't trip myself!!): ```s3x, c/m, p0rn, h3ntai, f/ck, p3nis and v4gina```  This bot is also trans and enby-friendly, since the use of *they/them* is included in the pool. I also respond to: ```s3x!help, s3x!donate, s3x!whodidthis, s3x!invite and s3x!contribute```" ); 
+    message.channel.send( message.author + "I will spout random p*rn mad-libs anytime the following words are mentioned at any point (censored so I don't trip myself!!): ```s3x, c/m, p0rn, h3ntai, f/ck, p3nis and v4gina```  This bot is also trans and enby-friendly, since the use of *they/them* is included in the pool. I also respond to: ```s3x!help, s3x!donate, s3x!whodidthis, s3x!invite and s3x!contribute```" ); 
   }
 
   if(message.content === `${config.prefix}donate`)
   {
-    message.channel.send("If you want to actually donate to this cursed cause and bot, you can do so here: ``` paypal.me/thenintoaster ```  "); 
+    message.channel.send( message.author + "If you want to actually donate to this cursed cause and bot, you can do so here: ``` paypal.me/thenintoaster ```  "); 
   }
 
   if(message.content === `${config.prefix}whodidthis`)
   {
-    message.channel.send("I was created by a dumb Canadian that calls herself as Nikki, her discord tag is `@The NinToaster #1495` Why? F/ck you, that's why. Nah I'm messing with you, this is a port of an almost 20yr old arch package."); 
+    message.channel.send(message.author + "I was created by a dumb Canadian that calls herself as Nikki, her discord tag is `@The NinToaster #1495` Why? F/ck you, that's why. Nah I'm messing with you, this is a port of an almost 20yr old arch package."); 
   }
 
   if(message.content === `${config.prefix}contribute`)
   {
-    message.channel.send("Want to contribute new words? Wanna improve this bot? Here's the GitHub page!: ``` https://github.com/The-NinToaster/sex ``` and open an Issue or a Pull Request! My creator will look periodically."); 
+    message.channel.send(message.author + "Want to contribute new words? Wanna improve this bot? Here's the GitHub page!: ``` https://github.com/The-NinToaster/sex ``` and open an Issue or a Pull Request! My creator will look periodically."); 
   }
 
 
   if(message.content === `${config.prefix}invite`)
   {
-    message.channel.send("To invite me to another server, use this invite! ```https://discord.com/oauth2/authorize?client_id=790587562926407701&scope=bot ```"); 
+    message.channel.send(message.author + "To invite me to another server, use this invite! ```https://discord.com/oauth2/authorize?client_id=790587562926407701&scope=bot ```"); 
   }
 
 
