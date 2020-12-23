@@ -283,7 +283,7 @@ client.on('message', message => {
 
   if(message.content === `${config.prefix}whodidthis`)
   {
-    message.channel.send(message.author.toString + " I was created by a dumb Canadian that calls herself as Nikki, her discord tag is `@The NinToaster #1495` Why? Fuck you, that's why. Nah I'm messing with you, this is a port of an almost 20yr old arch package."); 
+    message.channel.send(message.author.toString() + " I was created by a dumb Canadian that calls herself as Nikki, her discord tag is `@The NinToaster #1495` Why? Fuck you, that's why. Nah I'm messing with you, this is a port of an almost 20yr old arch package."); 
   }
 
   if(message.content === `${config.prefix}contribute`)
@@ -294,7 +294,7 @@ client.on('message', message => {
 
   if(message.content === `${config.prefix}invite`)
   {
-    message.channel.send(message.author.tag + " To invite me to another server, use this invite! ```https://discord.com/oauth2/authorize?client_id=790587562926407701&scope=bot ```"); 
+    message.channel.send(message.author.toString() + " To invite me to another server, use this invite! ```https://discord.com/oauth2/authorize?client_id=790587562926407701&scope=bot ```"); 
   }
 })
 
