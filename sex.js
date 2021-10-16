@@ -47,7 +47,7 @@ let the = "the";
 
 let fadj = [
         "saucy",                "wanton",               "unfortunate",
-        "lust-crazed",          "nine-year-old",        "bull-dyke",
+        "lust-crazed",          "bull-dyke",
         "bisexual",             "gorgeous",             "sweet",
         "nymphomaniacal",       "large-hipped",         "freckled",
         "forty-five year old",  "white-haired",         "large-boned",
